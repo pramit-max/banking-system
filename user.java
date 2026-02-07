@@ -62,7 +62,7 @@ public class user {
 
     // login()
     static boolean login(String email, String password) {
-        String sql = "SELECT email FROM users WHERE email=? AND password=?";
+        String sql = "SELECT email FROM user WHERE email=? AND password=?";
 
         try (Connection con = getConnection();
              PreparedStatement ps = con.prepareStatement(sql)) {
